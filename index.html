@@ -13,46 +13,114 @@
       color: #222;
       line-height: 1.6;
     }
+
     header {
       background: linear-gradient(90deg, #2c3e50, #4ca1af);
       color: white;
-      padding: 30px 20px 60px;
+      padding: 25px 15px 50px;
       text-align: center;
     }
-    header h1 { margin: 0; font-size: 2.4rem; }
-    header p { opacity: 0.9; margin-top: 5px; }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
     nav {
       background-color: #1f2c38;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      padding: 12px 0;
+      gap: 10px;
+      padding: 10px;
       position: sticky;
       top: 0;
+      z-index: 999;
     }
+
     nav a {
       color: white;
       text-decoration: none;
-      padding: 10px 20px;
+      padding: 10px 14px;
       background-color: #2c3e50;
-      border-radius: 5px;
-      font-size: 15px;
+      border-radius: 6px;
+      font-size: 14px;
       transition: 0.3s;
     }
-    nav a:hover { background-color: #4ca1af; transform: scale(1.05); }
+
+    nav a:hover {
+      background-color: #4ca1af;
+      transform: scale(1.03);
+    }
+
     .container {
-      max-width: 950px;
+      max-width: 95%;
       background: white;
-      margin: 40px auto;
-      padding: 40px 50px;
-      border-radius: 16px;
+      margin: 25px auto;
+      padding: 25px 20px;
+      border-radius: 14px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-    h2 { color: #2c3e50; border-bottom: 2px solid #4ca1af; padding-bottom: 8px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-    table th, table td { border: 1px solid #ccc; padding: 8px; }
-    table th { background: #f2f2f2; }
-    .footer { text-align: center; color: #777; margin: 50px 0 20px; }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #4ca1af;
+      padding-bottom: 8px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin-top: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+    }
+
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 8px 10px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      margin: 40px 0 15px;
+    }
+
+    /* Responsif tambahan */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      header p { font-size: 0.85rem; }
+      nav a { font-size: 13px; padding: 8px 12px; }
+      .container { padding: 20px 15px; }
+      h2 { font-size: 1.05rem; }
+      p { font-size: 14px; }
+    }
   </style>
 </head>
 <body>
@@ -75,26 +143,29 @@
   <p>Yayasan Kie Raha adalah lembaga sosial dan keagamaan di Maluku Utara yang fokus pada riset sosial, pengembangan masyarakat, serta penguatan nilai-nilai moderasi beragama. Didirikan oleh para tokoh akademisi dan masyarakat untuk menjadi motor penggerak harmoni sosial, politik, ekonomi, dan spiritual.</p>
 
   <h2>Struktur Kepengurusan</h2>
-  <table>
-    <tr><th>Jabatan</th><th>Nama</th></tr>
-    <!-- Dewan Pembina -->
-    <tr><td>Ketua Dewan Pembina</td><td>Dr. Asrul Gaelea, SE., M.Si</td></tr>
-    <tr><td>Wakil Ketua Dewan Pembina</td><td>Dr. Jacob Kailola, S.Hut., M.Sc.</td></tr>
+  <div class="table-container">
+    <table>
+      <tr><th>Jabatan</th><th>Nama</th></tr>
 
-    <!-- Dewan Pengawas -->
-    <tr><td>Ketua Dewan Pengawas</td><td>Prof. Dr. Ramli Hadun, SP., M.Sc.</td></tr>
-    <tr><td>Wakil Ketua Dewan Pengawas</td><td>Dr. Agus Supriyadi, S.Pd., M.Pd.</td></tr>
+      <!-- Dewan Pembina -->
+      <tr><td>Ketua Dewan Pembina</td><td>Dr. Asrul Gaelea, SE., M.Si</td></tr>
+      <tr><td>Wakil Ketua Dewan Pembina</td><td>Dr. Jacob Kailola, S.Hut., M.Sc.</td></tr>
 
-    <!-- Pengurus -->
-    <tr><td>Ketua</td><td>Dr. Ir. Abdurahman Hoda, M.Si</td></tr>
-    <tr><td>Wakil Ketua</td><td>Dr. Belum ada Nama, M.Si</td></tr>
-    <tr><td>Sekretaris</td><td>Abdurrahman, S.Pi</td></tr>
-    <tr><td>Bendahara</td><td>Andriani</td></tr>
+      <!-- Dewan Pengawas -->
+      <tr><td>Ketua Dewan Pengawas</td><td>Prof. Dr. Ramli Hadun, SP., M.Sc.</td></tr>
+      <tr><td>Wakil Ketua Dewan Pengawas</td><td>Dr. Agus Supriyadi, S.Pd., M.Pd.</td></tr>
 
-    <!-- Divisi -->
-    <tr><td>Divisi Survei</td><td>Dr. Syarifuddin Fatmona, S.Pt., M.Si</td></tr>
-    <tr><td>Divisi Keagamaan</td><td>Dr. Adnan Mahmud, S.Ag.</td></tr>
-  </table>
+      <!-- Pengurus -->
+      <tr><td>Ketua</td><td>Dr. Ir. Abdurahman Hoda, M.Si – 081340181717</td></tr>
+      <tr><td>Wakil Ketua</td><td>Dr. Belum ada Nama, M.Si – 08123456789</td></tr>
+      <tr><td>Sekretaris</td><td>Abdurrahman, S.Pi – 081229942538</td></tr>
+      <tr><td>Bendahara</td><td>Andriani</td></tr>
+
+      <!-- Divisi -->
+      <tr><td>Divisi Survei</td><td>Dr. Syarifuddin Fatmona, S.Pt., M.Si – 081316919206</td></tr>
+      <tr><td>Divisi Keagamaan</td><td>Dr. Adnan Mahmud, S.Ag. – 08xxxxxxxxxx</td></tr>
+    </table>
+  </div>
 </div>
 
 <div class="footer">
