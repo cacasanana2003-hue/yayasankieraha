@@ -19,7 +19,6 @@
       color: white;
       padding: 30px 20px 60px;
       text-align: center;
-      position: relative;
     }
 
     header h1 {
@@ -57,7 +56,6 @@
 
     nav a:hover {
       background-color: #4ca1af;
-      color: #fff;
       transform: scale(1.05);
     }
 
@@ -75,11 +73,6 @@
       border-bottom: 2px solid #4ca1af;
       padding-bottom: 8px;
       margin-top: 40px;
-    }
-
-    h3 {
-      color: #444;
-      margin-top: 25px;
     }
 
     p, li {
@@ -105,14 +98,6 @@
       font-weight: bold;
     }
 
-    .highlight {
-      background-color: #f6f9fc;
-      border-left: 4px solid #4ca1af;
-      padding: 10px 15px;
-      margin-top: 15px;
-      border-radius: 5px;
-    }
-
     .signature {
       margin-top: 40px;
       text-align: right;
@@ -120,27 +105,6 @@
 
     .signature p {
       margin: 4px 0;
-    }
-
-    .legalitas-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .legalitas-buttons a {
-      background-color: #4ca1af;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-      font-weight: bold;
-    }
-
-    .legalitas-buttons a:hover {
-      background-color: #2c3e50;
     }
 
     .footer {
@@ -158,76 +122,33 @@
   <p>Dokumen Resmi & Surat Pendukung Pendirian Yayasan</p>
 </header>
 
+<!-- 🔹 NAVBAR LANGSUNG KE PDF FILE -->
 <nav>
-  <a href="#data">Data Umum</a>
-  <a href="#struktur">Struktur</a>
-  <a href="#pengurus">Pengurus</a>
-  <a href="#dokumen">Dokumen Pendukung</a>
-  <a href="#legalitas">Legalitas Yayasan</a>
+  <a href="lengkap.pdf" target="_blank">📄 Administrasi Yayasan</a>
+  <a href="dataumum.pdf" target="_blank">🪪 Data Umum (KTP & NPWP)</a>
+  <a href="manfaat.pdf" target="_blank">🧾 Surat Pemilik Manfaat</a>
+  <a href="keterangansetormodal.pdf" target="_blank">💰 Surat Setor Modal</a>
+  <a href="setormodal.pdf" target="_blank">🏦 Bukti Setor Modal</a>
 </nav>
 
 <div class="container">
-  <section id="data">
-    <h2>1. Data Umum</h2>
-    <p><strong>Nama Yayasan:</strong> Yayasan Kie Raha<br>
-    <strong>Jumlah Pendiri:</strong> 7 Orang (melampirkan fotokopi KTP, NPWP, email, dan nomor telepon)<br>
-    <strong>Alamat / Domisili:</strong> (Diisi sesuai surat domisili dari Kepala Desa/Lurah)<br>
-    <strong>Bidang Kegiatan:</strong> Sosial, Kemanusiaan, Keagamaan<br>
-    <strong>Nomor NPWP Yayasan:</strong> (setelah SK Akta keluar)</p>
-  </section>
+  <h2>Profil Singkat Yayasan Kie Raha</h2>
+  <p>Yayasan Kie Raha merupakan lembaga sosial dan keagamaan yang bergerak di bidang riset sosial, pengembangan masyarakat, serta penguatan nilai-nilai moderasi beragama di Maluku Utara. Didirikan oleh tokoh akademisi dan masyarakat untuk menjadi wadah kolaboratif dalam pembangunan sosial, ekonomi, dan spiritual daerah.</p>
 
-  <section id="struktur">
-    <h2>3. Struktur Organisasi Yayasan</h2>
-    <table>
-      <tr><th>Organisasi</th><th>Nama</th><th>Jabatan</th></tr>
-      <tr><td>Dewan Pembina</td><td>Dr. Asrul Gaelea, SE., M.Si</td><td>Ketua Dewan Pembina</td></tr>
-      <tr><td>Dewan Pembina</td><td>Dr. Jacob Kailola, S.Hut., M.Sc.</td><td>Anggota Dewan Pembina</td></tr>
-      <tr><td>Dewan Pengawas</td><td>Prof. Dr. Ramli Hadun, SP., M.Sc.</td><td>Ketua Dewan Pengawas</td></tr>
-      <tr><td>Dewan Pengawas</td><td>Dr. Belum ada Nama, S.M.</td><td>Anggota Dewan Pengawas</td></tr>
-    </table>
-  </section>
-
-  <section id="pengurus">
-    <h2>4. Pengurus Yayasan</h2>
-    <table>
-      <tr><th>Jabatan</th><th>Nama</th><th>Kontak</th></tr>
-      <tr><td>Ketua</td><td>Dr. Ir. Abdurahman Hoda, M.Si</td><td>081340181717</td></tr>
-      <tr><td>Wakil Ketua</td><td>Dr. Belum ada Nama, M.Si</td><td>08123456789</td></tr>
-      <tr><td>Sekretaris</td><td>Abdurrahman, S.Pi</td><td>081229942538</td></tr>
-      <tr><td>Bendahara</td><td>Andriani</td><td>-</td></tr>
-    </table>
-
-    <h2>5. Divisi Yayasan</h2>
-    <table>
-      <tr><th>Divisi</th><th>Nama</th><th>Kontak</th></tr>
-      <tr><td>Divisi Survei</td><td>Dr. Syarifuddin Fatmona, S.Pt., M.Si</td><td>081316919206</td></tr>
-      <tr><td>Divisi Keagamaan</td><td>Dr. Adnan Mahmud, S.Ag.</td><td>08xxxxxxxxxx</td></tr>
-    </table>
-  </section>
-
-  <section id="dokumen">
-    <h2>6. Dokumen Pendukung</h2>
-    <ul>
-      <li>Surat Keterangan Domisili Yayasan</li>
-      <li>Surat Keterangan Pemilik Manfaat</li>
-      <li>Surat Keterangan Setor Modal</li>
-      <li>Bukti Setor Modal Awal atas nama Yayasan</li>
-      <li>NPWP Yayasan</li>
-      <li>Cap Stempel Yayasan</li>
-    </ul>
-  </section>
-
-  <section id="legalitas">
-    <h2>Legalitas Yayasan</h2>
-    <p>Berikut akses cepat ke dokumen legalitas Yayasan Kie Raha:</p>
-    <div class="legalitas-buttons">
-      <a href="lengkap.pdf" target="_blank">📄 Administrasi Pendaftaran Yayasan Kie Raha</a>
-      <a href="dataumum.pdf" target="_blank">🪪 Berkas KTP & NPWP Pendiri</a>
-      <a href="manfaat.pdf" target="_blank">🧾 Surat Pemilik Manfaat</a>
-      <a href="keterangansetormodal.pdf" target="_blank">💰 Surat Keterangan Setor Modal</a>
-      <a href="setormodal.pdf" target="_blank">🏦 Bukti Setor Modal Awal</a>
-    </div>
-  </section>
+  <h2>Struktur Pimpinan & Pengurus</h2>
+  <table>
+    <tr><th>Jabatan</th><th>Nama</th></tr>
+    <tr><td>Ketua Dewan Pembina</td><td>Dr. Asrul Gaelea, SE., M.Si</td></tr>
+    <tr><td>Anggota Dewan Pembina</td><td>Dr. Jacob Kailola, S.Hut., M.Sc.</td></tr>
+    <tr><td>Ketua Dewan Pengawas</td><td>Prof. Dr. Ramli Hadun, SP., M.Sc.</td></tr>
+    <tr><td>Anggota Dewan Pengawas</td><td>Dr. Belum ada Nama, S.M.</td></tr>
+    <tr><td>Ketua</td><td>Dr. Ir. Abdurahman Hoda, M.Si</td></tr>
+    <tr><td>Wakil Ketua</td><td>Dr. Belum ada Nama, M.Si</td></tr>
+    <tr><td>Sekretaris</td><td>Abdurrahman, S.Pi</td></tr>
+    <tr><td>Bendahara</td><td>Andriani</td></tr>
+    <tr><td>Divisi Survei</td><td>Dr. Syarifuddin Fatmona, S.Pt., M.Si</td></tr>
+    <tr><td>Divisi Keagamaan</td><td>Dr. Adnan Mahmud, S.Ag.</td></tr>
+  </table>
 
   <div class="signature">
     <p><strong>Yayasan Kie Raha</strong></p>
